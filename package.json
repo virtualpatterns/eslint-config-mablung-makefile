@@ -33,11 +33,10 @@
     "src": "release"
   },
   "description": "TBD",
-  "eslintConfig": {
-    "extends": [
-      "./source/index.cjs"
-    ]
-  },
+  "eslintConfig": {},
+  "eslintIgnore": [
+    "source/test"
+  ],
   "exports": {
     ".": "./release/index.cjs",
     "./package.json": "./package.json"
@@ -58,7 +57,6 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.14.8",
-    "ava": "^3.15.0",
-    "depcheck": "^1.4.2"
+    "ava": "^3.15.0"
   }
 }

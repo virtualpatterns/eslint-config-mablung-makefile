@@ -42,7 +42,7 @@
     "./package.json": "./package.json"
   },
   "files": [
-    "index.cjs"
+    "release/index.cjs"
   ],
   "license": "GPL-3.0+",
   "name": "@virtualpatterns/eslint-config-mablung-makefile",

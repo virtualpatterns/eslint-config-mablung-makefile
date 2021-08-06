@@ -1,1 +1,1 @@
-module.exports = require('@virtualpatterns/mablung-makefile/package.json').eslintConfig
+module.exports = require('../package.json').eslintConfig

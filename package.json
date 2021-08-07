@@ -116,7 +116,7 @@
     "url": "https://github.com/virtualpatterns/eslint-config-mablung-makefile"
   },
   "type": "module",
-  "version": "0.0.7-0",
+  "version": "0.0.7",
   "devDependencies": {
     "@virtualpatterns/mablung-makefile": "0.0.18",
     "ava": "^3.15.0",

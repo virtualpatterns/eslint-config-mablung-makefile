@@ -33,7 +33,7 @@
       },
       {
         "exclude": [
-          "source/header/**/*"
+          "source/header"
         ],
         "plugins": [
           [

@@ -33,7 +33,8 @@
       },
       {
         "exclude": [
-          "source/header"
+          "source/header",
+          "source/test"
         ],
         "plugins": [
           [
@@ -120,8 +121,14 @@
   "type": "module",
   "version": "0.0.12",
   "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/eslint-parser": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
     "@virtualpatterns/mablung-makefile": "0.0.23",
     "ava": "^3.15.0",
-    "eslint": "^7.32.0"
+    "depcheck": "^1.4.2",
+    "babel-plugin-add-header-comment": "^1.0.3",
+    "eslint": "^7.32.0",
+    "eslint-plugin-babel": "^5.3.1"
   }
 }

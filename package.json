@@ -119,7 +119,7 @@
     "url": "https://github.com/virtualpatterns/eslint-config-mablung-makefile"
   },
   "type": "module",
-  "version": "0.0.13",
+  "version": "0.0.14-0",
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/eslint-parser": "^7.15.0",

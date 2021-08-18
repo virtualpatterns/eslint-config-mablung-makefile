@@ -6,6 +6,7 @@
     "./package.json": "./package.json"
   },
   "files": [
+    ".eslintrc.json",
     "release/index.cjs"
   ],
   "license": "GPL-3.0+",

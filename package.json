@@ -22,7 +22,7 @@
     "@babel/core": "^7.15.0",
     "@babel/eslint-parser": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
-    "@virtualpatterns/mablung-makefile": "0.0.26-15",
+    "@virtualpatterns/mablung-makefile": "0.0.26-21",
     "ava": "^3.15.0",
     "depcheck": "^1.4.2",
     "babel-plugin-add-header-comment": "^1.0.3",

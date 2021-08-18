@@ -1,9 +1,10 @@
 import { createRequire as CreateRequire } from 'module'
-import ESLint from 'eslint'
+import { ESLint as Lint } from 'eslint'
 import Test from 'ava'
 
-const { 'ESLint': Lint } = ESLint
 const Require = CreateRequire(import.meta.url)
+
+// util.inspect.defaultOptions.depth = 5;  // Increase AVA's printing depth
 
 Test('arrow-parens', async (test) => {
 

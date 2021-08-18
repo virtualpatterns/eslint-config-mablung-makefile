@@ -1,1 +1,1 @@
-module.exports = require('../package.json').eslintConfig
+module.exports = require('../.eslintrc.json')

@@ -19,6 +19,7 @@
   "type": "module",
   "version": "0.0.26-14",
   "dependencies": {
+    "@babel/core": "^7.15.0",
     "@babel/eslint-parser": "^7.15.0"
   },
   "devDependencies": {

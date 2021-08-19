@@ -2,7 +2,7 @@
   "all": true,
   "exclude": [
     "release/header",
-    ".avarc.cjs"
+    "test.cjs"
   ],
   "reporter": [
     "html"

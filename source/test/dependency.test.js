@@ -7,8 +7,11 @@ Test('(default)', async (test) => {
 
   let unused = await Check(Process.cwd(), {
     'ignoreMatches': [
+      // '@babel/core',
+      // '@babel/eslint-parser',
       '@babel/preset-env',
       'babel-plugin-add-header-comment'
+      // 'eslint-plugin-babel'
     ],
     'parsers': {
       '**/*.cjs': [ Check.parser.es6, Check.parser.es7.default ],

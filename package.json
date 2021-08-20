@@ -6,7 +6,7 @@
     "./package.json": "./package.json"
   },
   "files": [
-    "check.json",
+    ".eslintrc.json",
     "release/index.cjs"
   ],
   "license": "GPL-3.0+",
@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.15.0",
-    "@virtualpatterns/mablung-makefile": "0.0.26-33",
+    "@virtualpatterns/mablung-makefile": "0.0.26-35",
     "ava": "^3.15.0",
     "eslint-plugin-babel": "^5.3.1",
     "depcheck": "^1.4.2",

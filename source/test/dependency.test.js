@@ -14,8 +14,9 @@ Test('(default)', async (test) => {
       // 'eslint-plugin-babel'
     ],
     'parsers': {
-      '**/*.cjs': [ Check.parser.es6, Check.parser.es7.default ],
-      '**/*.js': [ Check.parser.es6, Check.parser.es7.default ]
+      '**/*.js': [ Check.parser.es6 ]
+      // '**/*.cjs': [ Check.parser.es6, Check.parser.es7.default ],
+      // '**/*.js': [ Check.parser.es6, Check.parser.es7.default ]
     }
   })
 

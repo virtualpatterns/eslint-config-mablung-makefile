@@ -10,7 +10,7 @@ Test('arrow-parens', async (test) => {
 
   let code = 'console.log((b => b + 1)(42)) // eslint-disable-line no-console'
   let option = {
-    'extends': Require.resolve('../index.cjs')
+    'extends': Require.resolve('@virtualpatterns/eslint-config-mablung-makefile')
   }
 
   let lint = new Lint({ 'baseConfig': option })
@@ -28,7 +28,7 @@ Test('no-console', async (test) => {
 
   let code = 'console.log(42)'
   let option = {
-    'extends': Require.resolve('../index.cjs')
+    'extends': Require.resolve('@virtualpatterns/eslint-config-mablung-makefile')
   }
 
   let lint = new Lint({ 'baseConfig': option })

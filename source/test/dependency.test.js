@@ -10,6 +10,7 @@ Test('default', async (test) => {
       // '@babel/core',
       // '@babel/eslint-parser',
       '@babel/preset-env',
+      '@virtualpatterns/mablung-makefile',
       'babel-plugin-add-header-comment'
       // 'eslint-plugin-babel'
     ],

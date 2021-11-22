@@ -7,7 +7,7 @@
   },
   "files": [
     ".eslintrc.json",
-    "release/index.cjs"
+    "release/index.*"
   ],
   "license": "GPL-3.0+",
   "main": "release/index.cjs",
@@ -25,11 +25,11 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.4",
-    "@virtualpatterns/mablung-makefile": "0.0.26-137",
+    "@virtualpatterns/mablung-makefile": "0.0.26-144",
     "ava": "^3.15.0",
     "babel-plugin-add-header-comment": "^1.0.3",
     "depcheck": "^1.4.2",
-    "eslint": "^8.2.0",
+    "eslint": "^8.3.0",
     "fs-extra": "^10.0.0"
   }
 }

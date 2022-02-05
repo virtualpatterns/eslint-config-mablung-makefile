@@ -1,18 +1,19 @@
 import { createRequire as CreateRequire } from 'module'
-import { ESLint as Lint } from 'eslint'
+import { ESLint } from 'eslint'
 import Test from 'ava'
 
 const Require = CreateRequire(import.meta.url)
 
-// util.inspect.defaultOptions.depth = 5;  // Increase AVA's printing depth
+const Lint = new ESLint({
+  'baseConfig': {
+    'extends': Require.resolve('@virtualpatterns/eslint-config-mablung-makefile')
+  }
+})
 
 Test('arrow-parens', async (test) => {
 
   let code = 'export const OK = (argument => argument ? true : true)()'
-  let option = { 'extends': Require.resolve('@virtualpatterns/eslint-config-mablung-makefile') }
-
-  let lint = new Lint({ 'baseConfig': option })
-  let result = await lint.lintText(code)
+  let result = await Lint.lintText(code)
 
   // test.log(result[0].messages)
   test.is(result[0].messages.length, 1)
@@ -25,10 +26,7 @@ Test('arrow-parens', async (test) => {
 Test('comma-dangle', async (test) => {
 
   let code = 'export const OK = [ true, ]'
-  let option = { 'extends': Require.resolve('@virtualpatterns/eslint-config-mablung-makefile') }
-
-  let lint = new Lint({ 'baseConfig': option })
-  let result = await lint.lintText(code)
+  let result = await Lint.lintText(code)
 
   // test.log(result[0].messages)
   test.is(result[0].messages.length, 1)
@@ -41,10 +39,7 @@ Test('comma-dangle', async (test) => {
 Test('indent', async (test) => {
 
   let code = 'export const OK = [\ntrue\n]'
-  let option = { 'extends': Require.resolve('@virtualpatterns/eslint-config-mablung-makefile') }
-
-  let lint = new Lint({ 'baseConfig': option })
-  let result = await lint.lintText(code)
+  let result = await Lint.lintText(code)
 
   // test.log(result[0].messages)
   test.is(result[0].messages.length, 1)
@@ -57,10 +52,7 @@ Test('indent', async (test) => {
 Test('no-console', async (test) => {
 
   let code = 'console.log(true)'
-  let option = { 'extends': Require.resolve('@virtualpatterns/eslint-config-mablung-makefile') }
-
-  let lint = new Lint({ 'baseConfig': option })
-  let result = await lint.lintText(code)
+  let result = await Lint.lintText(code)
 
   // test.log(result[0].messages)
   test.is(result[0].messages.length, 1)
@@ -73,10 +65,7 @@ Test('no-console', async (test) => {
 Test('no-unused-vars', async (test) => {
 
   let code = 'let value = true'
-  let option = { 'extends': Require.resolve('@virtualpatterns/eslint-config-mablung-makefile') }
-
-  let lint = new Lint({ 'baseConfig': option })
-  let result = await lint.lintText(code)
+  let result = await Lint.lintText(code)
 
   // test.log(result[0].messages)
   test.is(result[0].messages.length, 1)
@@ -89,10 +78,7 @@ Test('no-unused-vars', async (test) => {
 Test('quotes', async (test) => {
 
   let code = 'export const OK = "true"'
-  let option = { 'extends': Require.resolve('@virtualpatterns/eslint-config-mablung-makefile') }
-
-  let lint = new Lint({ 'baseConfig': option })
-  let result = await lint.lintText(code)
+  let result = await Lint.lintText(code)
 
   // test.log(result[0].messages)
   test.is(result[0].messages.length, 1)
@@ -105,10 +91,7 @@ Test('quotes', async (test) => {
 Test('semi', async (test) => {
 
   let code = 'export const OK = true;'
-  let option = { 'extends': Require.resolve('@virtualpatterns/eslint-config-mablung-makefile') }
-
-  let lint = new Lint({ 'baseConfig': option })
-  let result = await lint.lintText(code)
+  let result = await Lint.lintText(code)
 
   // test.log(result[0].messages)
   test.is(result[0].messages.length, 1)

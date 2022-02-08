@@ -29,7 +29,6 @@
     "ava": "^4.0.1",
     "babel-plugin-add-header-comment": "^1.0.3",
     "depcheck": "^1.4.3",
-    "eslint": "^8.8.0",
-    "fs-extra": "^10.0.0"
+    "eslint": "^8.8.0"
   }
 }

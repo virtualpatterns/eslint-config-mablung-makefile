@@ -1,12 +1,9 @@
-import { createRequire as CreateRequire } from 'module'
 import { ESLint } from 'eslint'
 import Test from 'ava'
 
-const Require = CreateRequire(import.meta.url)
-
 const Lint = new ESLint({
   'baseConfig': {
-    'extends': Require.resolve('@virtualpatterns/eslint-config-mablung-makefile')
+    'extends': '@virtualpatterns/eslint-config-mablung-makefile'
   }
 })
 

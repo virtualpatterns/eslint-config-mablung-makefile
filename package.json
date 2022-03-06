@@ -27,8 +27,8 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.11",
-    "@virtualpatterns/mablung-makefile": "0.0.26-265",
-    "ava": "^4.0.1",
+    "@virtualpatterns/mablung-makefile": "0.0.26-267",
+    "ava": "^4.1.0",
     "babel-plugin-add-header-comment": "^1.0.3",
     "depcheck": "^1.4.3",
     "eslint": "^8.10.0"

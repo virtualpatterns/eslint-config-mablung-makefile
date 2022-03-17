@@ -1,9 +1,14 @@
 import { ESLint } from 'eslint'
+import Path from 'path'
 import Test from 'ava'
+import URL from 'url'
+
+const FilePath = URL.fileURLToPath(import.meta.url)
+const FolderPath = Path.dirname(FilePath)
 
 const Lint = new ESLint({
   'baseConfig': {
-    'extends': '@virtualpatterns/eslint-config-mablung-makefile'
+    'extends': Path.resolve(FolderPath, '../index.cjs')
   }
 })
 
